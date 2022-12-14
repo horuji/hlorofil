@@ -4,33 +4,59 @@
     overflow-x: hidden;
     font-family: Ubuntu, Cantarell;
 }
+h1{
+    font-size: 4em;
+    margin-top: 10vh;
+}
+p{
+    font-size: 2em;
+}
+img{
+    max-width: 700px;
+    max-height: 400px;
+}
+
 a:active, 
 a:hover,
 a{
     color: aliceblue;
     text-decoration: none;
 }
+.logo_hi{
+    margin-left: 105px;
+}
+.logo_hi img{
+ max-height:5vh;
+}
 .background{
-    position: absolute;
-    top: 0;
+
     width: 100vw;
     height: 100vh;
-    background-image: url("../img/back.jpg");
+    background-image: url("../img/back1.jpg");
    background-position: center;
    background-size: cover;
-   opacity: 0.7;
-  z-index: -1;
   
+
+  
+}
+menu:hover {
+    background-color:rgba(0, 0, 0, 1) ;
+    transition: 0.5s;
 }
 menu{
     background-color:rgba(0, 0, 0, 0.5) ;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
     width: 100vw;
+  
+    z-index: 1;
 
 }
+
 menu ul{
     display: flex;
     flex-direction: row;
@@ -46,7 +72,66 @@ menu ul li a {
 
 }
 .Main{
-    padding-top: 40vh;
-    text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+    
+}
+.text{
+    width: 40vw;
+}
+.About{
+    
+    
+}
+.cont{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.buy{
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    flex-direction: row;
+    justify-content: space-around;
    
+
+}
+.buy_var{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 18vw;
+    height: 40vh;
+    background-color: rgba(0, 0, 0, 0.5) ;
+    border-radius: 5px;
+  
+
+
+}
+.buy_but{
+    display: flex;
+    width: 16vw;
+    height:10vh ;
+    border: 1px solid black;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.5) ;
+    
+    
+}
+
+footer{
+    background-color:rgba(0, 0, 0, 0.5) ;
+    height: 50vh;
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 }
