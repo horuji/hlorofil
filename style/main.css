@@ -41,10 +41,7 @@ a{
 
   
 }
-menu:hover {
-    background-color:rgba(0, 0, 0, 1) ;
-    transition: 0.5s;
-}
+
 menu{
     background-color:rgba(0, 0, 0, 0.5) ;
     position: fixed;
@@ -95,22 +92,20 @@ justify-content: center;
 
 .buy{
     display: flex;
-    width: 100vw;
-    height: 50vh;
+   
     flex-direction: row;
     justify-content: space-evenly;
    
 
 }
 .buy_var{
-    padding: 10px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 34vw;
-    height: 250px;
-    overflow: hidden;
+    width: 300px;
+    height: 200px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     margin: 20px;
@@ -140,7 +135,10 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 }
-
+footer:hover {
+    background-color:rgba(0, 0, 0, 1) ;
+    transition: 0.5s;
+}
 .logo span{
     display: block;
     background-color: black;
@@ -155,4 +153,93 @@ justify-content: center;
 }
 .logo img{
     margin: 10px;
+}
+@media( min-width:720px ) {
+    menu:hover {
+        background-color:rgba(0, 0, 0, 1) ;
+        transition: 0.5s;
+    } 
+}
+@media  (max-width:720px){
+    .mini_manu {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        border-radius: 5px;
+       margin-left: calc(50vw - 25px);
+       margin-top: 30px;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+       z-index: 2;
+       
+    }
+    .mini_manu span{
+     display: block;
+      width: 40px;
+      height: 4px;
+      background-color: white;
+     
+    }
+    @keyframes menu{
+        from{
+            width: 50px;
+            height: 50px;
+        }
+        50%{
+            width: 100vw;
+            height: 50px;  
+        }
+        to{
+            width: 100vw;
+            height: 50vh;
+        }
+
+    }
+    .mini_manu:hover {
+        cursor: pointer;
+       
+    }
+    .manu_anim{
+        animation: menu 5s;
+    }
+   
+   
+
+    menu{
+        flex-direction: column ;
+        align-items: center;
+        width: 0;
+       height: 0;
+       padding: 0;
+        transition: 1s;
+     background-color: black;
+    }
+    .menu_show{
+       
+       
+        width: 100vw;
+        height: 300px;
+    }
+
+    menu ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    menu ul li{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .logo_hi{
+        margin: 0;
+    }
+
+
+    .buy{
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+    }
 }
