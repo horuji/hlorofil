@@ -7,13 +7,16 @@
 h1{
     font-size: 4em;
     margin-top: 10vh;
+    margin-left: 10px;
 }
-p{
+h2{
     font-size: 2em;
+
 }
 img{
     max-width: 700px;
     max-height: 400px;
+    
 }
 
 a:active, 
@@ -29,7 +32,6 @@ a{
  max-height:5vh;
 }
 .background{
-
     width: 100vw;
     height: 100vh;
     background-image: url("../img/back1.jpg");
@@ -52,7 +54,7 @@ menu{
     justify-content: space-between;
     padding: 20px;
     width: 100vw;
-  
+    transition: 0.5s;
     z-index: 1;
 
 }
@@ -96,7 +98,7 @@ justify-content: center;
     width: 100vw;
     height: 50vh;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
    
 
 }
@@ -106,26 +108,29 @@ justify-content: center;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 18vw;
-    height: 40vh;
-    background-color: rgba(0, 0, 0, 0.5) ;
+    width: 34vw;
+    height: 250px;
+    overflow: hidden;
     border-radius: 5px;
-  
-
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin: 20px;
 
 }
-.buy_but{
-    display: flex;
-    width: 16vw;
-    height:10vh ;
-    border: 1px solid black;
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    background-color:rgba(0, 0, 0, 0.5) ;
-    
+.buy_var div{
+    padding: 10px;
+    overflow: hidden;
+}
+.full_price{
+    background-color:#d4dcbc;
+    color: black;
     
 }
+.discount{
+    background-color: #2f4e2e ;
+    color: white;
+}
+
+
 
 footer{
     background-color:rgba(0, 0, 0, 0.5) ;
@@ -134,4 +139,20 @@ footer{
 flex-direction: column;
 align-items: center;
 justify-content: center;
+}
+
+.logo span{
+    display: block;
+    background-color: black;
+    width: 100px;
+    height: 3px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+.logo img{
+    margin: 10px;
 }
